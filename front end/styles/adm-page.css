@@ -113,6 +113,7 @@
         
         justify-content: center;
         align-items: center;
+        padding-top: 100px;
     }
     .box-hello p  {
         font-size: 30px;
@@ -124,7 +125,7 @@
         display: flex;
         width: 319px;
         justify-content: space-between;
-        margin: 5px;
+        margin-top: 40px;
     }
     .box-hello-buttons button {
         background: transparent;
@@ -132,6 +133,9 @@
         border-radius: 3px;
         width: 142px;
         height: 49px;
+
+        font-weight: bold;
+        transition: 0.4s;
     }
     .box-hello-buttons button:hover {
         border: #1391ea solid 1px;
