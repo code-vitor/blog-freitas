@@ -54,7 +54,10 @@
 .nav-space div {
     margin-right: 50px;
 }
-
+.test { 
+    width: 50%;
+    height: 800px;
+}
 
 
 /*TEXTAREA*/
