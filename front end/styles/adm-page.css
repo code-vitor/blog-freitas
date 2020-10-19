@@ -9,9 +9,9 @@
 .container {
     display: flex;
     justify-content: center;
+    flex-direction: column;
 
     width: 100%;
-    height: 100vh;
 }
     /*NAVBAR*/
 .navbar {
@@ -19,8 +19,6 @@
     height: 81px;
 
     background-color: #000;
-
-    position: fixed;
 
     display: flex;
     align-items: center;
@@ -34,6 +32,7 @@
     line-height: 82px;
     color: #fff;
     margin-left: 30px;
+    user-select: none;
 }
 .nav-logo strong {
     color: #1391ea;
@@ -52,69 +51,21 @@
 .nav-space div {
     margin-right: 50px;
 }
-    /*NAVBAR*/
-        /*DROPDOWN*/
-    .dropdown-article {
-        display: none;
-
-        background-color: #1391ea;
-    }
-    .dropdown-article a {
-        color: #fff;
-    }
-    .dropdown-category {
-        display: none;
-
-        width: 130px;
-        background-color: #1391ea;
-    }
-
-    .nav-a-article:hover .dropdown-article {
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        
-        border-radius: 3px;
-        width: 200px;
-
-        text-align: center;
-        
-    }
-    .dropdown-article a:hover {
-        font-size: 16px;
-        color: #000;
-        transition: 0.7s;
-    }
-
-    .nav-a-category:hover .dropdown-category {
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-
-        border-radius: 3px;
-        width: 200px;
-
-        text-align: center;
-        transition: 1s;
-    }
-    .dropdown-category a:hover {
-        font-size: 16px;
-        color: #000;
-        transition: 0.7s;
-    }
+ 
             /*BOX HELLO*/
     
     .box-hello {
         width: 100%;
         height: 100vh;
         background: url('../src/images/bg.jfif') no-repeat;
+        background-size: 1028px;
         display: flex;
         flex-direction: column;
         
         justify-content: center;
         align-items: center;
-        padding-top: 100px;
-    }
+        border-bottom: #00000057 2px solid;   
+     }
     .box-hello p  {
         font-size: 30px;
     }
@@ -128,22 +79,103 @@
         margin-top: 40px;
     }
     .box-hello-buttons button {
-        background: transparent;
+        background: black;
         border: #00000091 solid 1px;
         border-radius: 3px;
         width: 142px;
         height: 49px;
-
         font-weight: bold;
-        transition: 0.4s;
+        transition: 0.2s;
+        cursor: pointer;
+        color: #118fea;
     }
     .box-hello-buttons button:hover {
-        border: #1391ea solid 1px;
-        color: #1391ea;
+        border: none;
+        color: #fff;
+        background-color: #1391ea;
     }
 
+    .box-article {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
 
+        padding-top: 99px;
+    }
+    .box-article-img-hero {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
+    .box-article-img-hero img { 
+        width: 457px;
+        margin: 100px 0px 100px 0px;
+    }
+    .box-article-all-articles {
+        width: 100%; 
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .box-article-unique { 
+        width: 90%;
+        background-color: rgba(176, 176, 176, 0.2);
+        padding: 31px;
+
+        border-radius: 5px;
+        margin: 50px 0px;
+        line-height: 45px;
+
+    }
+    .box-article-unique button {
+    border: none;
+    border-radius: 2px;
+    width: 85px;
+    height: 28px;
+    cursor: pointer;
+    font-weight: bold;
+
+    background-color: #000000;
+    color: #1391ea;
+    transition: 0.4s;
+    }
+    .box-article-unique button:hover {
+        background-color: #1391ea;
+        color: #fff;
+    }
+    footer { 
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 218px;
+    }
+    footer div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    footer div button {
+        width: 146px;
+        height: 41px;
+
+        border: none;
+        border-radius: 5px;
+        font-weight: bold;
+        margin: 60px 0px;
+        cursor: pointer;
+
+        background-color: #000000;
+        color: #1391ea;
+        transition: 0.4s;
+    }
+
+    footer div button:hover {
+        background-color: #1391ea;
+        color: #fff;
+    }
 /*RESPONSIVE*/
 
 @media (max-width:780px){

@@ -53,56 +53,6 @@
 .nav-space div {
     margin-right: 50px;
 }
-    /*NAVBAR*/
-        /*DROPDOWN*/
-    .dropdown-article {
-        display: none;
-
-        background-color: #1391ea;
-    }
-    .dropdown-article a {
-        color: #fff;
-    }
-    .dropdown-category {
-        display: none;
-
-        width: 130px;
-        background-color: #1391ea;
-    }
-
-    .nav-a-article:hover .dropdown-article {
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        
-        border-radius: 3px;
-        width: 200px;
-
-        text-align: center;
-        
-    }
-    .dropdown-article a:hover {
-        font-size: 16px;
-        color: #000;
-        transition: 0.7s;
-    }
-
-    .nav-a-category:hover .dropdown-category {
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-
-        border-radius: 3px;
-        width: 200px;
-
-        text-align: center;
-        transition: 1s;
-    }
-    .dropdown-category a:hover {
-        font-size: 16px;
-        color: #000;
-        transition: 0.7s;
-    }
 
     /*BOX-LOGIN*/
 
@@ -165,6 +115,7 @@
     border-radius: 5px;
     margin-bottom: 12px;
     font-weight: bold;
+    cursor: pointer;
 }
 
 
