@@ -29,9 +29,38 @@
 
         </nav>
         
-        <!-- <div class="test">
-            <textarea name="" id="editor" cols="30" rows="10"></textarea>
-        </div> -->
+        <div class="box-master">
+            <div class="box-master-img">
+                <h1>Publique um novo artigo e compartilhe o seu <strong>conhecimento</strong></h1>
+                <img src="./src/images/new-ideas.svg" alt="new-ideas">
+            </div>
+
+            <form class="box-master-itens" action="" method="GET">
+              <div class="box-master-itens-input">  
+                  <div>
+                    <label for="">Titulo</label>
+                    <input type="text" name="title" id="">
+                  </div>
+                  <div>
+                    
+                    <label for="">Categoria</label>
+                    <select name="category" id="">
+                      <option value="">teste</option>
+                    </select>
+                  </div>
+              </div>
+
+              <div class="box-master-itens-textarea">
+                <label for="Description">Descrição do artigo</label>
+                <textarea name="description" id="" cols="30" rows="2" placeholder="Máximo 30 linhas..."></textarea>
+              </div>
+
+              <div class="box-master-itens-tiny">
+                <textarea id="editor" cols="30" rows="10" name="tinymce"></textarea>
+                <button>Publicar</button>
+              </div>
+            </form>
+        </div>
                 
     </div>
 
@@ -41,9 +70,12 @@
     
    tinymce.init({
     language: 'pt_BR',
+    width : "100%",
+    height : "250",
   selector: '#editor',
+  placeholder: 'Escreva aqui o seu artigo',
   plugins: 'advlist autolink link image lists print preview hr searchreplace wordcount fullscreen insertdatetime media save table paste emoticons fullscreen',
-  toolbar: 'undo redo | print | fullscreen | preview | emoticons | format',
+  toolbar: 'undo redo | print | fullscreen | preview | emoticons | format | image | document',
   
   /* enable automatic uploads of images represented by blob or data URIs*/
   automatic_uploads: true,
