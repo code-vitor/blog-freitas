@@ -1,0 +1,200 @@
+* {
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    background-color: #f3f3f3;
+}
+                /*NAVBAR*/                  
+.navbar {
+    width: 100%;
+    height: 81px;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.nav-logo {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 82px;
+    color: #fff;
+    margin-left: 30px;
+    user-select: none;
+}
+
+.nav-logo strong {
+    color: #1391ea;
+}
+
+.navbar a {
+    font-weight: bold;
+    color: #fff;
+    transition: 0.6s;
+}
+.navbar div a:hover { 
+    color: rgb(78, 146, 211);
+    font-weight: bold;
+
+}
+
+.nav-space {
+    display: flex;
+}
+
+.nav-space div {
+    margin-right: 50px;
+}
+
+main {
+    width: 100%;
+    height: 901px;
+}
+
+.box-50-01 { 
+    width: 100%;
+    height: 33.3%;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box-50-01 h2 {
+    margin: 5px;
+}
+
+.box-50-01 img {
+    width: 270px;
+    margin: 15px;
+}
+
+.box-50-02 { 
+    width: 100%;
+    height: 33.3%;
+
+    display: flex;
+    align-items: flex-end;
+nd}
+
+.box-50-02 img { 
+    width: 100%;
+}
+
+.box-50-03 {
+    width: 100%;
+    height: 33.3%;
+}
+
+/*ARTICLE*/
+
+.box-article-all-articles {
+    width: 100%; 
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.box-article-unique { 
+    width: 90%;
+    background-color: rgba(176, 176, 176, 0.2);
+    padding: 31px;
+
+    border-radius: 5px;
+    margin: 50px 0px;
+    line-height: 45px;
+
+}
+.box-article-unique button {
+border: none;
+border-radius: 2px;
+width: 85px;
+height: 28px;
+cursor: pointer;
+font-weight: bold;
+
+background-color: #000000;
+color: #1391ea;
+transition: 0.4s;
+}
+.box-article-unique button:hover {
+    background-color: #1391ea;
+    color: #fff;
+}
+
+/*FOOTER*/
+
+footer { 
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 218px;
+}
+footer div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer div h2 {
+    text-align: center;
+}
+footer div button {
+    width: 146px;
+    height: 41px;
+
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin: 60px 0px;
+    cursor: pointer;
+
+    background-color: #000000;
+    color: #1391ea;
+    transition: 0.4s;
+}
+
+footer div button:hover {
+    background-color: #1391ea;
+    color: #fff;
+}
+
+/*RESPONSIVE*/
+
+@media (max-width:725px) {
+    .nav-logo {
+        font-size: 20px;
+    }
+}
+
+@media (max-width:600px) {
+    .nav-logo {
+        font-size: 12px;
+    }
+
+    .nav-space a {
+        font-size: 10px;
+    }
+
+    .box-50-01 img {
+        width: 250px;
+    }
+    
+    .box-50-01 h2 {
+        text-align: center;
+    }
+
+    .box-article-all-articles h1 {
+        text-align: center;
+    }
+}
